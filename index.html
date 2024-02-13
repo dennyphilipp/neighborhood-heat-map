@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Calor Bairros</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type = "text/javascript" src="index.js"></script>
+    <!-- <script type="module" src="index.js"></script> -->
+</head>
+
+<body>
+    <div id="floating-panel">
+        <button id="toggle-heatmap">Remover mapa calor</button>
+        <button id="change-gradient">Mudar gradiente</button>
+        <button id="change-radius">Mudar raio</button>
+        <button id="change-opacity">Mudar opacidade</button>
+    </div>
+    <div id="map"></div>
+
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVHV9uke3URmwfPc_a_-sAX7GWFKmmpYo&callback=initMap&libraries=visualization&v=weekly"
+        defer>
+        </script>
+
+</body>
+</html>
